@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.weather-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.weather-form label {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+.weather-form input {
+    padding: 12px 15px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.weather-form input:focus {
+    border-color: #74b9ff;
+}
+
+.weather-form button {
+    padding: 12px;
+    background: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.weather-form button:hover {
+    background: #0652DD;
+}
+
+.weather-info {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.weather-info li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ecf0f1;
+    font-size: 1.05rem;
+    color: #2d3436;
+}
+
+.weather-info li:last-child {
+    border-bottom: none;
+}
+
+.error {
+    background: #ffe0e0;
+    color: #c0392b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #0984e3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
